@@ -9,9 +9,9 @@ export default {
   },
   plugins: [require("daisyui")],
   daisyui: {
-    // TODO: pořešit dark + light mode
     themes:[
-      "luxury",
+      "dark",
+      "light"
     ]
   }
 }

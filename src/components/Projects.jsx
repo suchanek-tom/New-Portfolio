@@ -1,7 +1,12 @@
+import { useState } from "react";
+import data from "./data";
+
 const Projects = () => {
+  const [projectList, setProjectList] = useState(data);
+
   return (
     <>
-      <div className="hero min-h-screen">
+      <div className="hero min-h-screen" id="projects">
         <div className="hero-content flex-col lg:flex-row">
           <div className=" flex-col w-1/2">
             <h1 className="text-5xl font-bold m-4">Projects</h1>
@@ -11,137 +16,34 @@ const Projects = () => {
               achieving innovative solutions
             </p>
             <p className=" m-4">
-              <b>Languages:</b>React, etc...
+              <b>Languages: </b>HTML, CSS (Tailwindcss + SCSS), JavaScript
+              (React + Typescript)
             </p>
           </div>
           <div>
             {/* Rights */}
-            <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-200 rounded-box">
-              <div className="carousel-item">
-                {/* Card */}
-                <div className="card w-96 bg-base-100 shadow-xl">
-                  <figure>
-                    <img
-                      src="https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                      <button className="btn btn-primary">Buy Now</button>
+            <div className="carousel-item">
+              <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-200 rounded-box">
+                {projectList.map((oneProject) => {
+                  const { id, image, title, description } = oneProject;
+                  return (
+                    <div
+                      key={id}
+                      className="carousel-item card w-96 bg-base-100 shadow-xl"
+                    >
+                      <figure>
+                        <img src={image} alt="image" />
+                      </figure>
+                      <div className="card-body">
+                        <h2 className="card-title">{title}</h2>
+                        <p>{description}</p>
+                        <div className="card-actions justify-end">
+                          <button className="btn btn-primary">Visit</button>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div className="carousel-item">
-                {/* Card */}
-                <div className="card w-96 bg-base-100 shadow-xl">
-                  <figure>
-                    <img
-                      src="https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                      <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="carousel-item">
-                {/* Card */}
-                <div className="card w-96 bg-base-100 shadow-xl">
-                  <figure>
-                    <img
-                      src="https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                      <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="carousel-item">
-                {/* Card */}
-                <div className="card w-96 bg-base-100 shadow-xl">
-                  <figure>
-                    <img
-                      src="https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                      <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="carousel-item">
-                {/* Card */}
-                <div className="card w-96 bg-base-100 shadow-xl">
-                  <figure>
-                    <img
-                      src="https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                      <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="carousel-item">
-                {/* Card */}
-                <div className="card w-96 bg-base-100 shadow-xl">
-                  <figure>
-                    <img
-                      src="https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                      <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="carousel-item">
-                {/* Card */}
-                <div className="card w-96 bg-base-100 shadow-xl">
-                  <figure>
-                    <img
-                      src="https://cdn.pixabay.com/photo/2015/01/08/18/25/desk-593327_1280.jpg"
-                      alt="Shoes"
-                    />
-                  </figure>
-                  <div className="card-body">
-                    <h2 className="card-title">Shoes!</h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
-                    <div className="card-actions justify-end">
-                      <button className="btn btn-primary">Buy Now</button>
-                    </div>
-                  </div>
-                </div>
+                  );
+                })}
               </div>
             </div>
           </div>
