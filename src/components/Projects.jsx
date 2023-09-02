@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <>
       <div className="hero min-h-screen" id="projects">
-        <div className="hero-content flex-col lg:flex-row">
+        <div className="hero-content w-full flex-col lg:flex-row">
           <div className=" flex-col w-1/2">
             <h1 className="text-5xl font-bold m-4">Projects</h1>
             <p className=" m-4">

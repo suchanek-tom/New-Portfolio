@@ -7,7 +7,7 @@ const Hero = () => {
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
             src="https://media.licdn.com/dms/image/D4E03AQHzqbT1bnivuw/profile-displayphoto-shrink_800_800/0/1692796595171?e=1698278400&v=beta&t=Atg7EszF5fLTTgzA8_fRL18bhh0DUlvJMdcDknetl7g"
-            className="max-w-xs rounded-lg shadow-2xl"
+            className="max-w-xs rounded-lg shadow-2xl mx-8"
           />
           <div>
             <h1 className="text-5xl font-bold">Tomáš Suchanek</h1>
