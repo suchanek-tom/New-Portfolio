@@ -1,4 +1,5 @@
 import SwitchTheme from "./SwitchTheme";
+import SwitchLanguage from "./SwitchLanguage";
 
 const Navbar = () => {
   return (
@@ -13,19 +14,28 @@ const Navbar = () => {
         </div>
         <div className="navbar-end">
           <div className=""></div>
-          <a className="btn mx-2 hidden md:flex" href="#about">
+          <a
+            className=" font-bold mx-2 hidden md:flex hover:opacity-50 duration-300"
+            href="#about"
+          >
             About
           </a>
-          <a className="btn mx-2 hidden md:flex" href="#projects">
+          <a
+            className=" font-bold mx-3 hidden md:flex hover:opacity-50 duration-300"
+            href="#projects"
+          >
             Projects
           </a>
-          <a className="btn mx-2 hidden md:flex" href="#contact">
+          <a
+            className=" font-bold mx-3 hidden md:flex hover:opacity-50 duration-300"
+            href="#contact"
+          >
             Contact
           </a>
         </div>
         {/* Navabr */}
         <div className="dropdown md:hidden">
-          <label tabIndex={0} className="btn btn-ghost btn-circle">
+          <label tabIndex={0} className=" btn-circle">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-7 w-7"
@@ -62,6 +72,8 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        {/* Language */}
+        <SwitchLanguage />
         {/* Dark/Light mode */}
         <SwitchTheme />
       </div>

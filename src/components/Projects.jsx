@@ -1,13 +1,16 @@
 import { useState } from "react";
 import data from "./data";
+import { useScroll } from "framer-motion";
+import { motion as m } from "framer-motion";
 
 const Projects = () => {
   const [projectList, setProjectList] = useState(data);
+  const { scrollXProgress } = useScroll();
 
   return (
     <>
-      <div className="hero min-h-screen" id="projects">
-        <div className="hero-content w-full flex-col lg:flex-row">
+      <div className="hero min-h-screen " id="projects">
+        <div className="hero-content flex-wrap lg:flex-row-reverse">
           <div className=" flex-col w-1/2">
             <h1 className="text-5xl font-bold m-4">Projects</h1>
             <p className=" m-4">
@@ -23,9 +26,13 @@ const Projects = () => {
           <div>
             {/* Rights */}
             <div className="carousel-item">
-              <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-200 rounded-box">
+              <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-200 rounded-box shadow-lg shadow-slate-900">
                 {projectList.map((oneProject) => {
-                  const { id, image, title, description } = oneProject;
+                  const { id, image, title, description, link } = oneProject;
+                  <m.div
+                    className="fixed h-3 bg-red-300 top-0 left-0 right-0 origin-top"
+                    style={{ scaleX: scrollXProgress }}
+                  />;
                   return (
                     <div
                       key={id}
@@ -38,7 +45,13 @@ const Projects = () => {
                         <h2 className="card-title">{title}</h2>
                         <p>{description}</p>
                         <div className="card-actions justify-end">
-                          <button className="btn btn-primary">Visit</button>
+                          <a
+                            className="btn btn-primary"
+                            href={link}
+                            target="blank"
+                          >
+                            Visit
+                          </a>
                         </div>
                       </div>
                     </div>

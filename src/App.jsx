@@ -5,7 +5,7 @@ import NotFoundPage from "./NotFoundPage";
 const App = () => {
   return (
     <>
-      <div className=" h-full min-h-full min-w-full">
+      <div className=" min-h-full">
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<HomePage />} />

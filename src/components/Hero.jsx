@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   return (
     <>
-      <div className="hero min-h-screen bg-base-200" id="about">
+      <div className="hero min-h-screen bg-base-300" id="about">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
             src="https://media.licdn.com/dms/image/D4E03AQHzqbT1bnivuw/profile-displayphoto-shrink_800_800/0/1692796595171?e=1698278400&v=beta&t=Atg7EszF5fLTTgzA8_fRL18bhh0DUlvJMdcDknetl7g"
@@ -29,7 +29,9 @@ const Hero = () => {
               />
             </div>
             <a href="#projects">
-              <button className="btn btn-primary">Projects</button>
+              <button className="btn font-semibold w-full lg:w-min">
+                Projects
+              </button>
             </a>
           </div>
         </div>

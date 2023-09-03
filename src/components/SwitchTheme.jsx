@@ -11,18 +11,20 @@ const SwitchTheme = () => {
     setTheme(theme === "luxury" ? "winter" : "luxury");
   };
 
-  //modify data-theme attribute on document.body when theme changes
   useEffect(() => {
     const body = document.body;
     body.setAttribute("data-theme", theme);
   }, [theme]);
 
   return (
-    <button className="btn btn-circle" onClick={toggleTheme}>
+    <button
+      className=" btn-circle ml-3 hover:opacity-50 duration-300"
+      onClick={toggleTheme}
+    >
       {theme === "luxury" ? (
-        <FiMoon className="w-5 h-5" />
+        <FiMoon className="w-6 h-6" />
       ) : (
-        <FiSun className="w-5 h-5" />
+        <FiSun className="w-6 h-6" />
       )}
     </button>
   );

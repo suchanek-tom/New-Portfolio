@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <>
-      <div className="hero min-h-screen bg-base-200" id="contact">
+      <div className="hero min-h-screen bg-base-300" id="contact">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left">
             <h1 className="text-5xl font-bold">Keep in touch!</h1>
@@ -18,7 +18,7 @@ const Contact = () => {
               </a>
             </p>
           </div>
-          <div className="card flex-shrink-0 items-center w-1/2 shadow-2xl bg-base-100">
+          <div className="card flex-shrink-0 items-center w-full lg:w-1/2 shadow-2xl bg-base-100">
             <div className="card-body">
               <div>
                 <h3 className=" font-bold text-2xl text-center mb-4">Social</h3>
