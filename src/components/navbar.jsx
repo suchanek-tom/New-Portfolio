@@ -1,81 +1,112 @@
 import SwitchTheme from "./SwitchTheme";
-import SwitchLanguage from "./SwitchLanguage";
+// import SwitchLanguage from "./SwitchLanguage";
 
 const Navbar = () => {
   return (
     <>
-      <div className="navbar bg-base-100 sticky top-0 z-10 shadow-lg">
-        <div className="navbar-start">
-          <div className="flex-1">
-            <a className="btn btn-ghost normal-case text-xl" href="#about">
+      <div className="drawer drawer-end sticky top-0 z-20">
+        <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
+        <div className="drawer-content flex flex-col">
+          {/* Navbar */}
+          <div className="w-full navbar bg-base-100 shadow-lg">
+            <div className=" px-2 mx-2 text-xl mr-auto block lg:ml-0 lg:flex-1">
               Portfolio
-            </a>
+            </div>
+            <div className="flex lg:hidden">
+              <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  className="inline-block w-6 h-6 stroke-current"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </label>
+            </div>
+            <div className="flex-none hidden lg:block">
+              <ul className="menu menu-horizontal">
+                {/* Navbar menu content here */}
+                <li>
+                  <a
+                    className=" font-bold px-2 mx-2 hidden md:flex hover:opacity-50 duration-300 text-lg"
+                    href="#about"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className=" font-bold px-2 mx-3 hidden md:flex hover:opacity-50 duration-300 text-lg"
+                    href="#projects"
+                  >
+                    Projects
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className=" font-bold px-2 mx-3 hidden md:flex hover:opacity-50 duration-300 text-lg"
+                    href="#contact"
+                  >
+                    Contact
+                  </a>
+                </li>
+                {/* <li> */}
+                {/* Language */}
+                {/* <SwitchLanguage /> */}
+                {/* </li> */}
+                <li>
+                  {/* Dark/Light mode */}
+                  <SwitchTheme />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="navbar-end">
-          <div className=""></div>
-          <a
-            className=" font-bold mx-2 hidden md:flex hover:opacity-50 duration-300"
-            href="#about"
-          >
-            About
-          </a>
-          <a
-            className=" font-bold mx-3 hidden md:flex hover:opacity-50 duration-300"
-            href="#projects"
-          >
-            Projects
-          </a>
-          <a
-            className=" font-bold mx-3 hidden md:flex hover:opacity-50 duration-300"
-            href="#contact"
-          >
-            Contact
-          </a>
-        </div>
-        {/* Navabr */}
-        <div className="dropdown md:hidden">
-          <label tabIndex={0} className=" btn-circle">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-7 w-7"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h7"
-              />
-            </svg>
-          </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box"
-          >
+        <div className="drawer-side z-50">
+          <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
+          <ul className="menu p-2 w-80 h-screen bg-base-200">
+            {/* Sidebar content here */}
+            <div className=" pt-4 mx-2 text-3xl font-semibold">Menu</div>
             <li>
-              <a href="#about" className=" text-xl">
+              <a
+                className=" font-bold mx-2 mt-4 md:flex hover:opacity-50 duration-300 text-lg"
+                href="#about"
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#projects" className=" text-xl">
+              <a
+                className=" font-bold mx-2  md:flex hover:opacity-50 duration-300 text-lg"
+                href="#projects"
+              >
                 Projects
               </a>
             </li>
             <li>
-              <a href="#contact" className=" text-xl">
+              <a
+                className=" font-bold mx-2  md:flex hover:opacity-50 duration-300 text-lg"
+                href="#contact"
+              >
                 Contact
               </a>
             </li>
+            {/* <li> */}
+            {/* Language */}
+            {/* <SwitchLanguage /> */}
+            {/* </li> */}
+            <li>
+              {/* Dark/Light mode */}
+              <SwitchTheme />
+            </li>
           </ul>
         </div>
-        {/* Language */}
-        <SwitchLanguage />
-        {/* Dark/Light mode */}
-        <SwitchTheme />
       </div>
     </>
   );

@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-import Navbar from "./components/navbar";
 
 const NotFoundPage = () => {
   return (
     <div className="">
-      <Navbar />
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center align-middle h-screen">
         <div className="px-4 lg:py-12">
           <div className="lg:gap-4 lg:flex">
             <div className="flex flex-col items-center justify-center">

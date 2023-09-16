@@ -1,4 +1,6 @@
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <footer className="footer p-10 bg-base text-neutral-content">
@@ -6,7 +8,7 @@ const Footer = () => {
           <p>
             Tomáš Suchanek
             <br />
-            2023
+            {currentYear}
           </p>
         </div>
         <div>

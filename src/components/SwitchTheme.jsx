@@ -18,7 +18,7 @@ const SwitchTheme = () => {
 
   return (
     <button
-      className=" btn-circle ml-3 hover:opacity-50 duration-300"
+      className=" w-full lg:w-min btn-circle hover:opacity-50 duration-300 text-lg flex align-middle mx-2"
       onClick={toggleTheme}
     >
       {theme === "luxury" ? (

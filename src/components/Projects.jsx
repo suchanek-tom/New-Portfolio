@@ -26,11 +26,11 @@ const Projects = () => {
           <div>
             {/* Rights */}
             <div className="carousel-item">
-              <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-200 rounded-box shadow-lg shadow-slate-900">
+              <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-200 rounded-box shadow-lg">
                 {projectList.map((oneProject) => {
                   const { id, image, title, description, link } = oneProject;
                   <m.div
-                    className="fixed h-3 bg-red-300 top-0 left-0 right-0 origin-top"
+                    className="fixed h-3 bg-red-300 top-0 left-0 right-0 origin-top z-10"
                     style={{ scaleX: scrollXProgress }}
                   />;
                   return (
