@@ -26,7 +26,7 @@ const Projects = () => {
           <div>
             {/* Rights */}
             <div className="carousel-item">
-              <div className="carousel carousel-center py-4 max-w-md space-x-3 bg-base-200 rounded-box shadow-lg">
+              <div className="carousel carousel-center py-4 max-w-sm lg:max-w-md space-x-3 bg-base-200 rounded-box shadow-lg">
                 {projectList.map((oneProject) => {
                   const { id, image, title, description, link } = oneProject;
                   {/* <m.div
