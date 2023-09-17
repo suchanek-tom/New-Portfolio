@@ -36,7 +36,7 @@ const allProjects = [
     id: 4,
     image: image4,
     title: "Netolismus web",
-    description: "Website about the topic of netolism, which i created it in a one students competition",
+    description: "Website about the topic of netolism, which i created it in a one student competition.",
     link: "https://github.com/suchanek-tom/Netolismus-Web/tree/master/web-netolismus",
   },
 ];
