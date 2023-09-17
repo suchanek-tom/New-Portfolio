@@ -16,16 +16,16 @@ const Projects = () => {
             <p className=" m-4">
               I have been passionately working on a diverse range of projects
               that showcase my creativity, dedication, and commitment to
-              achieving innovative solutions
+              achieving innovative solutions.
             </p>
             <p className=" m-4">
               <b>Languages: </b>HTML, CSS (Tailwindcss + SCSS), JavaScript
-              (React + partly Typescript)
+              (React + partly Typescript).
             </p>
           </div>
           <div>
             {/* Rights */}
-            <div className="carousel-item">
+            <div className="carousel-item max-w-screen-sm">
               <div className="carousel carousel-center max-w-md p-4 space-x-4 bg-base-200 rounded-box shadow-lg">
                 {projectList.map((oneProject) => {
                   const { id, image, title, description, link } = oneProject;
