@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
           <div className="w-full navbar bg-base-100 shadow-lg">
-            <div className=" px-2 mx-2 text-xl mr-auto block lg:ml-0 lg:flex-1">
+            <div className=" px-4 mx-2 text-xl mr-auto block lg:ml-0 lg:flex-1">
               Portfolio
             </div>
             <div className="flex lg:hidden">

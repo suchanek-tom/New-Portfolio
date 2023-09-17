@@ -29,12 +29,11 @@ const Hero = () => {
                 repeat={Infinity}
               />
             </div>
-            <a
-              href="#projects"
-              className=" flex items-center btn text-lg lg:text-left"
-            >
-              <button className=" font-bold lg:w-min">Projects</button>
-              <AiFillDownSquare />
+            <a href="#projects" className=" flex items-center">
+              <button className="btn btn-block px-2 font-bold lg:w-min">
+                Projects
+                {/* <AiFillDownSquare /> */}
+              </button>
             </a>
           </div>
         </div>
