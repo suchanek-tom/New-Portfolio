@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
           <div className="w-full navbar bg-base-100 shadow-lg">
-            <div className=" px-4 mx-2 text-xl mr-auto block lg:ml-0 lg:flex-1">
+            <div className=" px-4 mx-2 text-xl mr-auto block font-semibold lg:ml-0 lg:flex-1">
               Portfolio
             </div>
             <div className="flex lg:hidden">
@@ -34,7 +34,7 @@ const Navbar = () => {
                 {/* Navbar menu content here */}
                 <li>
                   <a
-                    className=" font-bold px-2 mx-2 hidden md:flex hover:opacity-50 duration-300 text-lg"
+                    className="font-semibold px-2 mx-2 hidden md:flex hover:opacity-50 duration-300 text-lg"
                     href="#about"
                   >
                     About
@@ -42,7 +42,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    className=" font-bold px-2 mx-3 hidden md:flex hover:opacity-50 duration-300 text-lg"
+                    className="font-semibold px-2 mx-3 hidden md:flex hover:opacity-50 duration-300 text-lg"
                     href="#projects"
                   >
                     Projects
@@ -50,7 +50,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    className=" font-bold px-2 mx-3 hidden md:flex hover:opacity-50 duration-300 text-lg"
+                    className="font-semibold px-2 mx-3 hidden md:flex hover:opacity-50 duration-300 text-lg"
                     href="#contact"
                   >
                     Contact
@@ -75,7 +75,7 @@ const Navbar = () => {
             <div className=" pt-4 mx-2 text-3xl font-semibold">Menu</div>
             <li>
               <a
-                className=" font-bold mx-2 mt-4 md:flex hover:opacity-50 duration-300 text-lg"
+                className=" hover:font-semibold mx-2 mt-4 md:flex hover:opacity-50 duration-300 text-lg"
                 href="#about"
               >
                 About
@@ -83,7 +83,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className=" font-bold mx-2  md:flex hover:opacity-50 duration-300 text-lg"
+                className=" hover:font-semibold mx-2  md:flex hover:opacity-50 duration-300 text-lg"
                 href="#projects"
               >
                 Projects
@@ -91,7 +91,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                className=" font-bold mx-2  md:flex hover:opacity-50 duration-300 text-lg"
+                className=" hover:font-semibold mx-2  md:flex hover:opacity-50 duration-300 text-lg"
                 href="#contact"
               >
                 Contact

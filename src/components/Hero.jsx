@@ -11,8 +11,8 @@ const Hero = () => {
             className="max-w-xs rounded-lg shadow-2xl mx-8"
           />
           <div>
-            <h1 className="text-5xl font-bold">Tomáš Suchanek</h1>
-            <div className=" my-4">
+            <h1 className="text-5xl font-bold xl:text-6xl">Tomáš Suchanek</h1>
+            <div className=" my-4 text-center lg:text-left">
               {/* Typing text */}
               <TypeAnimation
                 sequence={[
@@ -29,9 +29,9 @@ const Hero = () => {
                 repeat={Infinity}
               />
             </div>
-            <a href="#projects" className=" flex items-center">
-              <button className="btn btn-block px-2 font-bold lg:w-min">
-                Projects
+            <a href="#projects">
+              <button className="btn px-2 font-bold block mx-auto lg:mx-0">
+                See projects
                 {/* <AiFillDownSquare /> */}
               </button>
             </a>

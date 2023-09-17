@@ -11,7 +11,7 @@ const Projects = () => {
     <>
       <div className="hero min-h-screen " id="projects">
         <div className="hero-content flex-wrap lg:flex-row-reverse">
-          <div className=" flex-col w-1/2">
+          <div className=" flex-col lg:w-1/2">
             <h1 className="text-5xl font-bold m-4">Projects</h1>
             <p className=" m-4">
               I have been passionately working on a diverse range of projects
@@ -20,7 +20,7 @@ const Projects = () => {
             </p>
             <p className=" m-4">
               <b>Languages: </b>HTML, CSS (Tailwindcss + SCSS), JavaScript
-              (React + Typescript)
+              (React + partly Typescript)
             </p>
           </div>
           <div>

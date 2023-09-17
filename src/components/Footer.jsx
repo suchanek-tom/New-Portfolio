@@ -5,10 +5,12 @@ const Footer = () => {
     <>
       <footer className="footer p-10 bg-base text-neutral-content">
         <div>
-          <p>
+          <p className=" text-base">
             Tomáš Suchanek
             <br />
-            {currentYear}
+            <span className=" font-light text-sm">
+              {currentYear}
+            </span>
           </p>
         </div>
         <div>
