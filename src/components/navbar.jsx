@@ -8,7 +8,7 @@ const Navbar = () => {
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* Navbar */}
-          <div className="w-full navbar bg-base-100 shadow-lg">
+          <div className=" navbar bg-base-100 shadow-lg">
             <div className=" px-4 mx-2 text-xl mr-auto block font-semibold lg:ml-0 lg:flex-1">
               Portfolio
             </div>
