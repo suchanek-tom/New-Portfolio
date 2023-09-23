@@ -5,3 +5,12 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Swipper Styling */
+.swiper-button-prev {
+    color: White; 
+}
+
+.swiper-button-next {
+    color: white; 
+}

@@ -15,15 +15,15 @@ const allProjects = [
       "Simple website on the topic of green deal, which I won in competition for students.",
     link: "https://www.tomas-suchanek.com/#projects",
   },
-  {
-    // TODO! přidat link
-    id: 2,
-    image: image3,
-    title: "Information Board",
-    description:
-      "This advanced school project based on Symfony and Tailwindcss.",
-    link: "https://www.tomas-suchanek.com/#projects",
-  },
+  // {
+  //   // TODO! přidat link
+  //   id: 2,
+  //   image: image3,
+  //   title: "Information Board",
+  //   description:
+  //     "This advanced school project based on Symfony and Tailwindcss.",
+  //   link: "https://www.tomas-suchanek.com/#projects",
+  // },
   {
     id: 3,
     image: image2,
