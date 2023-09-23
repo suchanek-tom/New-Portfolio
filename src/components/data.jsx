@@ -25,7 +25,7 @@ const allProjects = [
   //   link: "https://www.tomas-suchanek.com/#projects",
   // },
   {
-    id: 3,
+    id: 2,
     image: image2,
     title: "PC Pohotovost Karviná",
     description:
@@ -33,7 +33,7 @@ const allProjects = [
     link: "https://1-pc-pohotovost.cz/",
   },
   {
-    id: 4,
+    id: 3,
     image: image4,
     title: "Netolismus web",
     description: "Website about the topic of netolism, which i created it in a one student competition.",

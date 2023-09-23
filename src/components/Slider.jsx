@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { Pagination, Navigation } from "swiper/modules"
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
 
 const SLider = () =>{
 
@@ -20,8 +19,8 @@ const SLider = () =>{
                     clickable: true,
                 }}
                 navigation={true}
-                modules={[Pagination, Navigation]}
-                className=" carousel-item card w-80 lg:w-96 h-full bg-base-300 py-2 px-11"
+                modules={[Pagination]}
+                className=" carousel-item card w-80 lg:w-96 h-full bg-base-300 py-3 px-2"
                 style={{
                     "--swiper-pagination-color": "#FFBA08",
                     "--swiper-pagination-bullet-inactive-color": "#999999",
@@ -35,7 +34,7 @@ const SLider = () =>{
                 return(
                     <div key={id} className="">
                         <SwiperSlide className=" items-center justify-center" key={id}>
-                            <figure className=" w-">
+                            <figure className="">
                                 <img src={image} alt="image" className=" w-full"/>
                             </figure>
                             <div className="card-body">
