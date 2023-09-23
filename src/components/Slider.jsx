@@ -20,7 +20,7 @@ const SLider = () =>{
                 }}
                 navigation={true}
                 modules={[Pagination]}
-                className=" carousel-item card w-80 lg:w-96 h-full bg-base-300 py-3 px-2"
+                className=" carousel-item card w-80 lg:w-96 h-full bg-base-300 py-3"
                 style={{
                     "--swiper-pagination-color": "#FFBA08",
                     "--swiper-pagination-bullet-inactive-color": "#999999",

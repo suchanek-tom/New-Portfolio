@@ -11,7 +11,7 @@ const Hero = () => {
             className="max-w-xs rounded-lg shadow-2xl mx-8"
           />
           <div>
-            <h1 className="text-5xl font-bold xl:text-6xl">Tomáš Suchanek</h1>
+            <h1 className="text-4xl font-bold xl:text-6xl">Tomáš Suchanek</h1>
             <div className=" my-4 text-center lg:text-left">
               {/* Typing text */}
               <TypeAnimation
