@@ -8,13 +8,12 @@ import image5 from "../../public/chitchat-logo.png"
 
 const allProjects = [
   {
-    // TODO! přidat link
     id: 1,
     image: image1,
     title: "Green Deal",
     description:
       "Simple website on the topic of green deal, which I won in competition for students.",
-    link: "https://www.tomas-suchanek.com/#projects",
+    link: "https://github.com/suchanek-tom/Green-deal-web",
   },
   // {
   //   // TODO! přidat link
