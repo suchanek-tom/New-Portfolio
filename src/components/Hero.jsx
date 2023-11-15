@@ -6,7 +6,8 @@ const Hero = () => {
       <div className="hero min-h-screen bg-base-200" id="about">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <img
-            src="../public/Profilovka-ITIXO.png"
+            src="/Profilovka-ITIXO.png"
+            alt="profile picture"
             className="max-w-xs rounded-lg shadow-2xl mx-8"
           />
           <div>
