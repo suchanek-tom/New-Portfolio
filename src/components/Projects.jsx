@@ -5,11 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import SLider from "./Slider";
 
 const Projects = () => {
-
-  //TODO: optimize imports and unused hooks:
-  const [projectList, setProjectList] = useState(data);
-  const { scrollXProgress } = useScroll();
-
   return (
     <>
       <div className="hero min-h-screen" id="projects">
