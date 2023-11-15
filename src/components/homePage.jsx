@@ -9,7 +9,7 @@ import { motion as m } from "framer-motion";
 const HomePage = () => {
   return (
     <>
-      <m.body
+      <m.main
         initial={{ opacity: 0.75 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.45, ease: "easeInOut" }}
@@ -19,7 +19,7 @@ const HomePage = () => {
         <Projects />
         <Contact />
         <Footer />
-      </m.body>
+      </m.main>
     </>
   );
 };
